@@ -15,10 +15,6 @@
 #8. Ordination based on Unifrac distance etc.
 #9. Output ASV and taxonomy tables as tsv format
 
-## QIIME2 "Moving Picture Tutrial" is available below.
-# https://docs.qiime2.org/2020.8/tutorials/moving-pictures/
-# Japanese private site: https://qiita.com/keisuke-ota/items/6399b2f2f7459cd9e418
-
 # Activate QIIME2
 # source activate qiime2-2020.2
 
