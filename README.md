@@ -1,5 +1,5 @@
 # KH-15-4_Kuroshio_Haptophytes
-Codes associated with Endo et al. (in revision) which investigates haptophyte biogeography in the Kuroshio.
+Codes associated with Endo et al. (Molecular Ecology, in revision) which investigates haptophyte biogeography in the Kuroshio.
 
 This git repository contains the files and scripts that are used to analyze the data and generate the figures for the following manuscript.
 
