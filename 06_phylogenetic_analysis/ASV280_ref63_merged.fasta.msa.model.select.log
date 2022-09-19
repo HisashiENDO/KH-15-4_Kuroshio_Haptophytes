@@ -1,0 +1,585 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dl560 (AVX512, FMA3, 1511 GB RAM)
+Command: iqtree -s ASV280_ref63_merged.fasta.msa -m TESTONLY -nt 12 -pre ASV280_ref63_merged.fasta.msa.model.select
+Seed:    341683 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Dec  1 18:10:57 2021
+Kernel:  AVX+FMA - 12 threads (64 CPU cores detected)
+
+Reading alignment file ASV280_ref63_merged.fasta.msa ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 344 sequences with 1865 columns, 862 distinct patterns
+423 parsimony-informative, 240 singleton sites, 1202 constant sites
+                                                          Gap/Ambiguity  Composition  p-value
+   1  HQ869677_Clade_HAP4_SHBF653                                51.37%    passed      8.99%
+   2  GU825177_Clade_HAP4_AA5F15RM1D01                           35.23%    passed     69.80%
+   3  EU500064_Clade_HAP4_hotxp1f3                               56.46%    failed      4.01%
+   4  KF130288_Clade_HAP4_ST6060_063                              5.15%    failed      0.21%
+   5  DQ918951_Clade_HAP4_ENVP366_00164                          75.87%    passed     30.54%
+   6  JF714232_Pavlova_sp_AC250                                   3.97%    passed     75.97%
+   7  HQ868699_Clade_HAP3_SHAX937                                52.98%    passed     23.63%
+   8  KF130175_Clade_HAP3_ST6000_025                              4.99%    failed      3.84%
+   9  KJ762982_Haptophyta_SGUH1350                                2.68%    failed      2.07%
+  10  KF129994_Clade_HAP5_ST5900_037                              4.77%    failed      1.64%
+  11  HM581532_Clade_HAP5_FS01AA17_01Aug05_5m                    39.46%    passed     66.21%
+  12  JX188371_Haptophyta_CC02A175_029                            4.72%    passed      5.90%
+  13  GU824821_Clade_HAP2_BCA5F15RM3F05                          35.50%    passed     58.84%
+  14  HM581562_Phaeocystis_sp_FS04GA51_01Aug05_5m                40.70%    passed     88.01%
+  15  HQ868849_Phaeocystis_sp_SHAX1099                           51.53%    passed     54.14%
+  16  JX680370_Phaeocystis_antarctica_DH129_Pry1_C20             42.25%    passed     89.89%
+  17  HQ869452_Phaeocystis_sp_SHBA419                            51.15%    passed     74.87%
+  18  JX680439_Phaeocystis_globosa_Ma130_Pry1_C6                 42.25%    passed     73.99%
+  19  AJ278035_Phaeocystis_globosa_CCMP627                        2.68%    passed     51.58%
+  20  KF422607_Phaeocystis_rex_CCMP2000                           9.17%    passed     65.78%
+  21  EF695123_Phaeocystis_sp_hotp2a4                            54.26%    passed      5.02%
+  22  JX660995_Phaeocystis_sp_RCC_PCC559                         12.76%    passed     74.09%
+  23  KJ762902_Clade_D_SGUH1172                                   3.49%    passed     21.36%
+  24  JX680341_Syracosphaerales_Ma130_Pry1_C40                   42.52%    passed     70.31%
+  25  AM490985_Algirosphaera_robusta_ALGO_Am_24                   7.56%    passed     24.59%
+  26  AM490984_Scyphosphaera_apsteinii_ALGO_TW16                  7.56%    passed     29.85%
+  27  JX680362_Clade_E_DH122_Pry1_C23                            42.41%    passed     80.87%
+  28  FJ537311_Clade_E_Biosope_T33_008                            3.49%    passed     20.93%
+  29  JF308273_Chrysoculter_sp_TB1H05                            66.27%    passed     47.00%
+  30  FN690514_Clade_F_3b_H6                                      9.38%    passed     46.67%
+  31  AJ544118_Umbilicosphaera_sibogae_ETH4728                    7.83%    passed     59.83%
+  32  AJ544115_Calcidiscus_quadriperforatus_ASM35                 7.83%    passed     67.62%
+  33  AB183608_Calyptrosphaera_sp_MBIC10517                       5.42%    passed     87.05%
+  34  AB636317_Tergestiella_adriatica__isolate_T6                 7.45%    passed     74.38%
+  35  EU500069_Braarudosphaera_bigelowii_hotxp1g2                56.46%    passed     28.39%
+  36  JX680408_Emiliania_Gephyrocapsa_sp_Ma135_Pry1_C4           42.14%    passed     77.30%
+  37  HQ394144_Prymnesiaceae_T0_73                               55.76%    passed     75.43%
+  38  JX680438_Prymnesiaceae_Ma130_Pry1_C39                      42.25%    passed     86.51%
+  39  JX291802_Prymnesium_sp_7656BH994_SP6                       60.70%    passed     67.25%
+  40  AB183611_Prymnesium_sp_MBIC10528                            5.79%    passed     46.18%
+  41  AM491009_Prymnesium_aff_polylepis_PLY_200                   3.97%    passed     50.40%
+  42  JX680421_Prymnesium_polylepis_Ma135_Pry1_C41               42.14%    passed     91.38%
+  43  AB183265_Prymnesium_neolepis_Yoshida                        7.61%    passed     45.78%
+  44  EF172993_Prymnesium_sp_SSRPD92                              9.87%    passed     54.87%
+  45  KJ763188_Haptolina_sp_SGUH579                               3.54%    passed     40.94%
+  46  HQ867036_Prymnesiaceae_SGTB572                             52.65%    passed     83.42%
+  47  JX680340_Prymnesiaceae_Ma125_Pry1_C57                      42.68%    passed     85.95%
+  48  FR874498_Dicrateria_sp_ws_59_1806A03                        8.36%    passed     55.21%
+  49  AM491022_Chrysocampanula_spinifera_PLY_328                  4.77%    passed     63.30%
+  50  HQ394028_Clade_B5_T4C3_40                                  54.69%    passed     37.22%
+  51  KF130564_Clade_B4_ST8900_063                                5.52%    passed     66.75%
+  52  HQ864929_Clade_B3_SGPX503                                  53.14%    passed     61.83%
+  53  HM581600_Clade_B3_FS04R14_1_27Feb07_75m_sort                6.22%    passed     14.46%
+  54  AJ246279_Chrysochromulina_throndsenii_UIO049_K11            4.45%    passed     29.22%
+  55  GU825016_Chrysochromulina_sp_AA5F15RM4B01                  35.44%    passed     38.83%
+  56  KF130550_Chrysochromulina_sp_ST8900_047                     5.74%    passed     27.82%
+  57  KJ762999_Chrysochromulina_sp_SGUH1383                       3.49%    passed     25.11%
+  58  JX680407_Chrysochromulina_sp_Ma135_Pry1_C34                41.93%    passed     69.94%
+  59  KF129692_Chrysochromulina_sp_ST3500_114                     5.68%    passed     33.43%
+  60  HQ869389_Chrysochromulina_sp_SHBA737                       52.01%    passed     56.91%
+  61  HM581603_Chrysochromulina_sp_FS04R13_10_27Feb07_75m_sort    3.54%    passed     34.62%
+  62  KJ763084_Chrysochromulina_sp_SGUH406                        3.65%    passed     12.60%
+  63  FN263276_Chrysochromulina_sp_B5                             3.70%    passed     31.50%
+  64  LC599498_Pavlomulina_ranunculiformis_NIES_3900              5.04%    failed      1.53%
+  65  b1683a5960153d58100a5371215c0230                           86.60%    passed     73.31%
+  66  774ba321f0096ef5c988eec207bf8c1b                           86.60%    passed     61.87%
+  67  d72ea6b9cd47f596733ba1bffe6825f5                           86.60%    passed     77.49%
+  68  3d2a7e35bbcf8c1dffa7d4a1b476930f                           86.60%    passed     81.41%
+  69  6ca0d4a5bf9f086ed331b354050008f1                           86.60%    passed     72.19%
+  70  8b788247d0dc6d7b7a15edd434b2f412                           86.60%    passed     71.70%
+  71  a5a46f941d8e1ab09c1c5b9339ed5aa3                           86.60%    passed     74.67%
+  72  239a71c05a5470da82bc835fd46a264b                           86.60%    passed     91.94%
+  73  5d40deff8dd8df7e15f3df350335894d                           86.60%    passed     72.57%
+  74  fc060bc3056e2b24fb7d61df6cc7cc91                           86.60%    passed     73.79%
+  75  524a9b7df8fec0dc1f9a27595c7db2a3                           86.60%    passed     72.79%
+  76  62f363149262f1eff985c8464d19ebf7                           86.60%    passed     76.32%
+  77  2fb6ea991789fd51f864e9968d2fc0cb                           86.60%    passed     82.12%
+  78  730158aebbcb3eb5397eb8ed7f01c598                           86.60%    passed     75.34%
+  79  d2c15144924e16eefa01256d05028223                           86.60%    passed     80.57%
+  80  9543958c5fb9022c43f460d1d2212493                           86.60%    passed     65.75%
+  81  f40a0352a49879edc3581e6b72d7e029                           86.60%    passed     49.67%
+  82  a8911a86f12602a1008d0cd2304908c1                           86.60%    passed     75.62%
+  83  b74846a4b2711cefa025ea5ce2e3b925                           86.60%    passed     65.75%
+  84  a99a3f031a3080134b4e4e1655341c05                           86.60%    passed     92.15%
+  85  040ab56129607ae49eb93ddfa34478ac                           86.60%    passed     61.87%
+  86  cdb6ada2f6976d70a5de7fe400557e01                           86.60%    passed     44.83%
+  87  2b6b83bc4b857d8a2d3acb168b904366                           86.60%    passed     61.73%
+  88  ce6cd0cbfafdce745dbe3e2700009141                           86.60%    passed     72.56%
+  89  9efca9298ffa05ab2d49a55f672e6daa                           86.60%    passed     82.03%
+  90  f0e6ee9ec7c6f7f7fb5a637f89bc08f1                           86.60%    passed     63.36%
+  91  b109f26e3fac14e3bb1d21084c6aa2ae                           86.60%    passed     77.09%
+  92  e12c5bb4190cec6034216df295b63bfe                           86.60%    passed     52.53%
+  93  98af88f3564fb73c3478f75a06c9432c                           86.60%    passed     85.83%
+  94  cf362ad7ef475d1386b42b69f319f528                           86.60%    passed     88.52%
+  95  cbca1fc21141ed16842dce2032bb94a4                           86.60%    passed     50.34%
+  96  e96c03333204052de98fe487ac66e426                           86.60%    passed     66.63%
+  97  e58a75aa14a1278ea958d68a21161d72                           86.60%    passed     90.94%
+  98  0237f164c6f23ada626dc043530e58be                           86.60%    passed     72.19%
+  99  3732052cd3d60e072757b113bdbbf362                           86.60%    passed     82.12%
+ 100  ca56e41a06012c7ceef0804fca34e9f4                           86.60%    passed     82.01%
+ 101  d384b0a7c9fc8add98ae736b5ae239a5                           86.60%    passed     75.00%
+ 102  5bbe0b28268edf12e6bdbca3fb223da3                           86.60%    passed     63.07%
+ 103  4a957a4c7f00f4479c0accedce06c687                           86.60%    passed     64.44%
+ 104  6e59990cc15443d9cda22a510ca3542b                           86.60%    passed     72.57%
+ 105  f1f7c5414ecbecb00bdd9b56eb5d6353                           86.60%    passed     93.49%
+ 106  55a27bfa2c4f9ae542ba376b52f7a671                           86.60%    passed     73.32%
+ 107  5b426e2663631cd9a0696c57f5459078                           86.60%    passed     62.43%
+ 108  28a09c1ad2e02d862bcb617fc93a9a0f                           86.60%    passed     77.49%
+ 109  8d67c00f5f4fdf6444b670cef5569d86                           86.60%    passed     56.31%
+ 110  cae0303bc784f598ab40433de06b1465                           86.60%    passed     75.68%
+ 111  dd7904afd9381a2ebca3be1a9bbf89a7                           86.60%    passed     81.24%
+ 112  4cada2a6c7f901252e19bf24fab04d01                           86.60%    passed     67.37%
+ 113  4a3e19e8c0be519e8cf5cf89fd10c145                           86.60%    passed     74.69%
+ 114  13652e1ba7d325a2b9b480993db846b6                           86.60%    passed     65.58%
+ 115  dad8fc959274b22e61095ccabec2a0eb                           86.60%    passed     83.01%
+ 116  144584647e8a458a0ec471bfa0f72fef                           86.60%    passed     80.53%
+ 117  379db1a541fbbf9c1afb38314514c40b                           86.60%    passed     80.89%
+ 118  0814ed311a8eee2e0b9aadf0bd7bffd5                           86.60%    passed     59.72%
+ 119  8d3aadee7acc710edc7b0a98727db1b4                           86.60%    passed     54.33%
+ 120  d343b353ba373a0e9a0523c0edb62828                           86.60%    passed     62.43%
+ 121  5cadf6e8aa308574d957ac359d4fe958                           86.60%    passed     81.88%
+ 122  58c07fdbf3bb3f184417ce562dee777b                           86.60%    passed     74.28%
+ 123  9b7e55b321134e4f4cd22316ff3d694c                           86.60%    passed     65.75%
+ 124  87bebde65385b25eeb5bf58d43f4a259                           86.60%    passed     92.10%
+ 125  07cf99983471b7849010b964155a0b00                           86.60%    passed     79.15%
+ 126  1c9f3e0e4a7e2be0dddeaa22c791cd23                           86.60%    passed     71.70%
+ 127  cf466d9d5a047d399396cd51619869ee                           86.60%    passed     80.09%
+ 128  7b8645d6badf88bc78cdbf551b1fe641                           86.60%    passed     95.37%
+ 129  768412beb4da00fa90bbcaa4df0c48d5                           86.60%    passed     88.67%
+ 130  9854c20977f9b82da67625792bca5422                           86.60%    passed     82.03%
+ 131  0fde87674753be193626937e43ae64a7                           86.60%    passed     59.72%
+ 132  5bde20478a5eb866eff18dffb352e4b1                           86.60%    passed     76.45%
+ 133  e98f9ff3a695defac6b8cccb6e2d95cd                           86.60%    passed     62.43%
+ 134  3051f76ff23a0eb73322c27c84cb2667                           86.60%    passed     47.05%
+ 135  6b0db70f2f40cc6a178f8cbab8070270                           86.60%    passed     74.69%
+ 136  3391c2df3c78353dcf6d52f08f217b03                           86.60%    passed     72.57%
+ 137  4de3e7f44010bff09438bbf861081625                           86.60%    passed     76.74%
+ 138  f746aa1ba50626113a9b0ed30213f19b                           86.60%    passed     53.45%
+ 139  db49845d0883bb2b4733277aac8327f0                           86.60%    passed     82.01%
+ 140  963d0ff7735dc1eadaecabe48ae837db                           86.60%    passed     80.89%
+ 141  326adba5c8aa57cc6aa7ec723baefff3                           86.60%    passed     71.70%
+ 142  e34ab4a3a3230b40c4af7c2bb761e06d                           86.60%    passed     81.07%
+ 143  397320d4189e90b940f97e9d3683ebc1                           86.60%    passed     87.32%
+ 144  543d8e8af473566107307f1039fcd494                           86.60%    passed     37.82%
+ 145  907bc3ead08d1872cc93c6466532445d                           86.60%    passed     75.68%
+ 146  8b8c996dcce198f0bec76820aa898004                           86.60%    passed     61.40%
+ 147  ad60010b0c276fb0f738c34ca5016e0d                           86.60%    passed     73.25%
+ 148  079b1d25d939a789f5f09fe9ca1f231f                           86.60%    passed     56.72%
+ 149  3bf02e459ee6aaa89a4f1382aa15bdaf                           86.60%    passed     82.01%
+ 150  27e1fa94d7213208bda8058f4f3d1dd6                           86.60%    passed     87.94%
+ 151  13c45f342353fcb6f442a849694214c3                           86.60%    passed     80.41%
+ 152  1cdd7e0c1d74a72fcc0c7bd78e7b830c                           86.60%    passed     75.00%
+ 153  8d3b8df892710569c245a275518ca737                           86.60%    passed     29.29%
+ 154  b4ac3fe3fa04cf91235e6b18928a0a0e                           86.60%    passed     78.85%
+ 155  ed8651005dd8529ef0bdb1c4d5072636                           86.60%    passed     76.43%
+ 156  82f7f69c2b9f241847f3824e5d8f39dc                           86.60%    passed     82.82%
+ 157  480dd634edf0138ff3c7fc8b359f3707                           86.60%    passed     92.18%
+ 158  4463645168bf213a2cf150b5a59ab123                           86.60%    passed     85.60%
+ 159  9f4aafdcad0be8851ee8fb5836bd3800                           86.60%    passed     63.07%
+ 160  de71679099d4759cbc011920dd6db5f4                           86.60%    passed     82.03%
+ 161  788a57cbdde2237b9412d2fb5d80d27a                           86.60%    passed     74.69%
+ 162  b231d94e09a7613788a431f5bc00bea2                           86.60%    passed     36.49%
+ 163  906f80e57b88276971a36c2016d3ef15                           86.60%    passed     80.09%
+ 164  f8f1c3d64e063d9e392662dc4c3c5918                           86.60%    passed     61.76%
+ 165  fec2508d11571bb1eb26bcb926a86d96                           86.60%    passed     85.88%
+ 166  f0cb0030f4b275bdbacc4fe96885aad3                           86.60%    passed     80.57%
+ 167  862d4e318c57e75ff2d98f630124a2c5                           86.60%    passed     83.98%
+ 168  4e8ebde90ae417bbfb9bab7af936a34a                           86.60%    passed     72.56%
+ 169  d543f1d3a57859f7633c9f693185a737                           86.60%    passed     75.71%
+ 170  85ff06c4bf4954b5340bdc9cfeca22df                           86.60%    passed     98.44%
+ 171  e181025d20202dd45167a0c15ac5918f                           86.60%    passed     77.72%
+ 172  19d56545609f238377b68f603f6e8e98                           86.60%    passed     74.49%
+ 173  eb62e21c7df0dbb37b414fafe4df5816                           86.60%    passed     85.86%
+ 174  c2f2e81ac4eb0e9b95d11959da5cfa48                           86.60%    passed     65.75%
+ 175  ed3d00b97777a445cb4796a092c04229                           86.60%    passed     83.23%
+ 176  ed30c514be49e493ad32a091c984f001                           86.60%    passed     69.86%
+ 177  42e73dbfe4975a8473c2bc29f2e1286d                           86.60%    passed     93.46%
+ 178  c91e26dc625cd11e490379532972d8b2                           86.60%    passed     65.05%
+ 179  bc5721bfee251055d7e4b2c5a1c6cd01                           86.60%    passed     90.86%
+ 180  1efd454f86ecebf8418b0b3a81dd195b                           86.60%    passed     76.71%
+ 181  120253b2761f95665fb65a6532c899f5                           86.60%    passed     95.67%
+ 182  fbc3bf5512530890f8e546eef674ed45                           86.60%    passed     65.75%
+ 183  107999a3cb27e023742e90e83a2f3cd8                           86.60%    passed     73.48%
+ 184  d738c9e0eca2ad9313cbfb9c29f58217                           86.60%    passed     83.98%
+ 185  8e0c4fe33f905cb2a7d9d58a823596e4                           86.60%    passed     81.41%
+ 186  6e9efa1ef81b95d6b6853aa0af45eac2                           86.60%    passed     63.01%
+ 187  e2c4110762de9457e1dbcad9abdc16b8                           86.60%    passed     74.59%
+ 188  f08ed60b7089c4d7a37a3fbfe9e9701e                           86.60%    passed     58.12%
+ 189  2289c33a129fda4853da70065bce8543                           86.60%    passed     93.46%
+ 190  a0ea80f68067ff3513d51b75cf769779                           86.60%    passed     76.43%
+ 191  c960420bbed203ca81946253f242b6d1                           86.60%    passed     98.57%
+ 192  1641f3dc0a0b8b88618d6ae3f801fef9                           86.60%    passed     81.60%
+ 193  b318f00957711bc95ebf81f4ab427f1f                           86.60%    passed     75.75%
+ 194  c93968e43143aa03cd871d37c200053c                           86.60%    passed     76.71%
+ 195  c6a8bb7f56b42ade3d7b17821aa4fc87                           86.60%    passed     76.73%
+ 196  c094306949b08ab49b10f920bb99769a                           86.60%    passed     85.99%
+ 197  ccff75926f9c2c07c469c8523fe96191                           86.60%    passed     83.98%
+ 198  03633f230269975029ff35bbfdb50e3c                           86.60%    passed     76.74%
+ 199  c37b8c53f72e8efa394edba537f256cc                           86.60%    passed     93.51%
+ 200  80f68c5e541a5bfd0875909f977c4258                           86.60%    passed     64.10%
+ 201  108cb88bc9d6ec7aa025c826ced6af58                           86.60%    passed     87.94%
+ 202  c28d60b33ab9d06f7814924c18b15313                           86.60%    passed     62.43%
+ 203  bbf84fe0e9e03fb40ac5d56c5ac746ef                           86.60%    passed     83.23%
+ 204  50e3a4b9225a8d51df4e6459d68e32e9                           86.60%    passed     68.26%
+ 205  902b0b8d35644622045788c8eb1835d3                           86.60%    passed     65.75%
+ 206  2906f25548fe90facea166d81581aeaf                           86.60%    passed     75.40%
+ 207  28c646af8e34e23f6eb951edfdb31801                           86.60%    passed     56.89%
+ 208  24e3a3e1bf5a2b0e0fef69c645fd27ac                           86.60%    passed     80.57%
+ 209  33f94b012f71b1d0128a4c0b8a6e1ddb                           86.60%    passed     62.43%
+ 210  37e098c2516acabd88c47bc7e523b406                           86.60%    passed     82.66%
+ 211  1a84bd1efb8ddd2416f94341d73c1835                           86.60%    passed     50.91%
+ 212  79e4097bde1158be74c4755c0c01cdc6                           86.60%    passed     75.71%
+ 213  2ca7c96691bf69b7aa7ee41d1971f375                           86.60%    passed     71.07%
+ 214  88702f7a4b73a4e3d955e18622dd38d1                           86.60%    passed     82.01%
+ 215  0f01b0258e34c0416fe30e9cd8ce4475                           86.60%    passed     91.55%
+ 216  86cde1d7dbcaa40e728650030a2c33e7                           86.60%    passed     37.60%
+ 217  843dfbb671db5ac44203646aa4c4c013                           86.60%    passed     59.72%
+ 218  dd0c18f6922cff3aacf93c65effa0928                           86.60%    passed     94.14%
+ 219  0c619d0c47b424c542a5076141771d2d                           86.60%    passed     83.75%
+ 220  1e80f904d8be4f876bf9299df2487d92                           86.60%    passed     83.77%
+ 221  ab687a1b6fb90dd7455f869316648be5                           86.60%    passed     78.44%
+ 222  9cfbb1438cea7c038e0ea19412cc8a06                           86.60%    passed     55.21%
+ 223  1d6b409a61c76ecda78b5eed0a2ff5c5                           86.60%    passed     67.08%
+ 224  5cb33bf984f5ed3ab1bcdf0e3dface82                           86.60%    passed     78.44%
+ 225  ecc5d926d6d249305c0110b487c15fdc                           86.60%    passed     78.44%
+ 226  50e00504d06c579a2e8c72b26d5287df                           86.60%    passed     41.21%
+ 227  dcc273ef63c31bbcb4692e641af15724                           86.60%    passed     76.33%
+ 228  c04b88019bedb2f9160a7b9c86c69c8b                           86.60%    passed     94.30%
+ 229  90d44765439939242c60274898b62a82                           86.60%    passed     75.00%
+ 230  303ac12edcf45a84cc8f173c410c5886                           86.60%    passed     84.51%
+ 231  0c9abeb1e97bb28f4bfecf468be1d7cf                           86.60%    passed     73.48%
+ 232  938768f5672f24c8f33d8fb83248c891                           86.60%    passed     43.08%
+ 233  2291a10e6d5d7526d113be2e8609da7c                           86.60%    passed     63.07%
+ 234  9470e8faabfa67c25b804851ad99c942                           86.60%    passed     88.82%
+ 235  976b2e16b8d3011bd8c96cd82d43edd4                           86.60%    passed     82.82%
+ 236  b2895859d6557fd9e071326a63daa321                           86.60%    passed     66.63%
+ 237  cfff8a43bf08752175a75c6234d8de5a                           86.60%    passed     91.94%
+ 238  b11df2a1403844cfc847d534d0bfaeed                           86.60%    passed     83.23%
+ 239  02c4df46f7ecb7d11845240473874e8f                           86.60%    passed     94.14%
+ 240  ec3bb382705ba04c0ecdacf9c66ddaac                           86.60%    passed     72.19%
+ 241  ded64dd844bd984a5872972a1703b9dd                           86.60%    passed     74.49%
+ 242  5bb13de9d4dd579d9695535bbd439bab                           86.60%    passed     26.85%
+ 243  a8cf63a49986812565fa5e2adbff43f5                           86.60%    passed     77.83%
+ 244  6f53f4da2ddab019ba132fa7f5eb33b0                           86.60%    passed     56.89%
+ 245  bc8cbb98426ecca2be7358f284a69557                           86.60%    passed     73.79%
+ 246  9efdf816a6cb77fd14ecf5075ab2c548                           86.60%    passed     49.19%
+ 247  e970423c2d27418a5c8b97f65bf6c188                           86.60%    passed     81.41%
+ 248  51ed1509eb32d8f2752f1e4cc5f084ab                           86.60%    passed     77.07%
+ 249  dd70a2311a3e4aff1ad1af57b073ff75                           86.60%    passed     81.88%
+ 250  e0286930ac2b7d604209061bbdf10663                           86.60%    passed     56.68%
+ 251  13b72f7911f201fd26462c45dedfd954                           86.60%    passed     50.59%
+ 252  85bde626f59ce8d97eaab1d953ef0121                           86.60%    passed     72.57%
+ 253  5d79dcb2153d5fbe4005658d32c46d5e                           86.60%    passed     74.69%
+ 254  a62ebbd867607a0cde6673eb2c808116                           86.60%    passed     80.03%
+ 255  64f10135ca1a6ddc5ad0ebd7b4a89d27                           86.60%    passed     70.51%
+ 256  3585f30b0ec10cd7e4817bae19960286                           86.60%    passed     81.94%
+ 257  d1dc21e382b9b542aa36d87a28d814db                           86.60%    passed     72.65%
+ 258  d7f2183a2312bb0dc9cd92a92a344e06                           86.60%    passed     87.97%
+ 259  34b6042e4b5be58cf6ef68c9609bfddb                           86.60%    passed     79.57%
+ 260  26ebdde62db152054e2a8f6315811f67                           86.60%    passed     61.68%
+ 261  8c8c9764e8ce6bf690d06fbe54c87a14                           86.60%    passed     87.94%
+ 262  2cfd5dc8bbdda6d3c87e44f9dc6b2d09                           86.60%    passed     89.44%
+ 263  4b5788d0b5b7aa440eda5cb129919457                           86.60%    passed     48.22%
+ 264  28438b71b4b3a94398a1ba66a97fe712                           86.60%    passed     66.63%
+ 265  58b33a22e62d363ec199bf19e8ad2c91                           86.60%    passed     68.50%
+ 266  401b430ea9f72a46b16d13f2c0b88d2d                           86.60%    passed     53.45%
+ 267  36b465083256cbfefdb44506b7d94107                           86.60%    passed     62.43%
+ 268  5fffe26d5369f0ab4705bc636aac5e3b                           86.60%    passed     74.59%
+ 269  d0ba2a785ccc17c0032422fa1afb4654                           86.60%    passed     73.66%
+ 270  075098894031ff0b9db781103fe07a07                           86.60%    passed     82.82%
+ 271  1ac5e017c98eb240e8d1bd91a93996c5                           86.60%    passed     57.99%
+ 272  a013651bbe8ca9a919d701e088a5760a                           86.60%    passed     33.83%
+ 273  f751227cbdff138bc745b5e64a467701                           86.60%    passed     75.68%
+ 274  2eab4665dadb8968dfc2e0a550aeb999                           86.60%    passed     41.63%
+ 275  1d58135c6b4419406877690e054cade5                           86.60%    passed     73.79%
+ 276  595a4f355e09200941617909ade1bc00                           86.60%    passed     80.53%
+ 277  babe660d966b390ff34a55a55526319f                           86.60%    passed     31.54%
+ 278  d3ec4c4042db6abd615b18c6e69b8e1e                           86.60%    passed     38.73%
+ 279  6e25486349670a60b571157e70ac6f08                           86.60%    passed     59.83%
+ 280  8aa84218b5f4d25e86757c9f1e156258                           86.60%    passed     62.43%
+ 281  7e7cd5e4836909d0778eda6725be3090                           86.60%    passed     69.58%
+ 282  7b29d85e499d5cf76e01d7de9b18ecf6                           86.60%    passed     59.35%
+ 283  ab25f248132c06e9a17082e9c766e3fa                           86.60%    passed     82.12%
+ 284  3a88171d2c8e87846aa374f407b37d1a                           86.60%    passed     83.52%
+ 285  9713ddc16514f24b7e0483a5af488f52                           86.60%    passed     88.03%
+ 286  34f429846fa8c7dabbffb1c6a3c34cf4                           86.60%    passed     92.11%
+ 287  54f03387ec7037c5fce2468ba9d03bd1                           86.60%    passed     68.69%
+ 288  6f6bd41feacbe7c8cb86bd6f107e75ad                           86.60%    passed     81.24%
+ 289  b3d5e2c7cc19e58d286d7838f4b6e21c                           86.60%    passed     50.91%
+ 290  eb04790ed702b7fd23bb0d4096dcfe47                           86.60%    passed     93.46%
+ 291  d64d5f480f7848e534e0f29c06f9067a                           86.60%    passed     87.99%
+ 292  9fefe27766f68420f66cc81c07e86e8f                           86.60%    passed     70.47%
+ 293  1e5f71a97aa7dbebd87a0c247cd952cb                           86.60%    passed     65.58%
+ 294  fd659da60232e1d9ffef459c19368ea1                           86.60%    passed     41.55%
+ 295  3270e44c4a0a75585bb4652062ed44b0                           86.60%    passed     66.67%
+ 296  988ef4a33f56748b02b0ed8cb4d20dfd                           86.60%    passed     73.79%
+ 297  08bd1d028a89657b6a79eef558e417a8                           86.60%    passed     22.55%
+ 298  eaf515d5503898b81e440ef2f6a9ccc4                           86.60%    passed     72.57%
+ 299  f5dd03a16ec1b7e0ab4209d8eb10656c                           86.60%    passed     69.29%
+ 300  fd525f1fbbc2e0d27d3273d7da7af253                           86.60%    passed     73.25%
+ 301  00be5f44b53fd23198a6e84709f792b1                           86.60%    passed     69.26%
+ 302  416c705aa527112703a1c696bc029804                           86.60%    passed     52.53%
+ 303  7c972e88ae892df92c4d308ba55f93fa                           86.60%    passed     55.59%
+ 304  98e6718cd250cfa17c79b43a1a7d2b4c                           86.60%    passed     74.49%
+ 305  bd6880436913d674d5858ea36345acca                           86.60%    passed     77.48%
+ 306  9b3bf36ce89aaf12f9d81a7020edfdfd                           86.60%    passed     60.76%
+ 307  d0290de652d2ccd4f2d4aba60e763195                           86.60%    passed     36.23%
+ 308  252a6453fe6ee34f7d3a435877b6f2c6                           86.60%    passed     80.89%
+ 309  3ddfd6a6000d34929faeab19162ba2fb                           86.60%    passed     66.94%
+ 310  e477fffb7e5ea01f18d8191f618e1896                           86.60%    passed     79.15%
+ 311  5064e0cdf1436e3125e468e93732736c                           86.60%    passed     90.86%
+ 312  bcd7b7d478c7285fe2f6d64cfb58c435                           86.60%    passed     78.75%
+ 313  01ba621af80e284ab64ef92a93a49397                           86.60%    passed     79.15%
+ 314  26808a5ac4cba5ba1c3e144589ee5646                           86.60%    passed     65.58%
+ 315  14f0399b49c8ae144954ac6598cb340c                           86.60%    passed     91.55%
+ 316  fc463ed3e6bd0e354ab91912a95e3ea3                           86.60%    passed     85.88%
+ 317  6ebb0bb8d9641c04558b2f9e927f8785                           86.60%    passed     94.30%
+ 318  da26e38b620ddc0571da0a1c10c19417                           86.60%    passed     74.69%
+ 319  3ba297c61ca256ec83ee50ec81ed5811                           86.60%    passed     75.68%
+ 320  479542c6d4f7c3686c3bd0261d3c7666                           86.60%    passed     48.59%
+ 321  628dde6ff8616cba69c6045e5fd244cd                           86.60%    passed     84.59%
+ 322  d128e143c1ee3bb3917f84ae04c71c72                           86.60%    passed     61.83%
+ 323  723bbcd996c1448b2ff69be930e0ff29                           86.60%    passed     60.72%
+ 324  8ce2ba23cfaade2bc919aa641350115e                           86.60%    passed     77.48%
+ 325  c34f7f9bacb8ef7590cfc6080b6823e9                           86.60%    passed     52.53%
+ 326  e7288fad38034d6f58652f463e751082                           86.60%    passed     86.22%
+ 327  222047cc04482515c28491985259252f                           86.60%    passed     43.95%
+ 328  56a16bec48a1f1bd1076fe4b1671927a                           86.60%    passed     74.59%
+ 329  5d5150321d8c4a43f701be367b4694cf                           86.60%    passed     70.98%
+ 330  3be0282dc4274fbb58af7ebfbca44f4b                           86.60%    passed     74.49%
+ 331  ac2d2889b73171e8af67510d50171331                           86.60%    passed      9.82%
+ 332  1a65d847f49b269cbbe6451b74a2ee34                           86.60%    passed     47.77%
+ 333  924439b90719ad43bdaa9390b5f212b4                           86.60%    passed     63.07%
+ 334  5fe9eeae545a452d98d99fb9a2f7a85b                           86.60%    passed     60.72%
+ 335  917227ccc466966ceba10b06d43e15ef                           86.60%    passed     92.15%
+ 336  703fb2f7b50fb0c25d4739debe2ca1d5                           86.60%    passed     93.51%
+ 337  19802b270111a84e8f28612e8488da10                           86.60%    passed     68.76%
+ 338  992ed4700c86215dfebbd008fd57f9ab                           86.60%    passed     61.76%
+ 339  4987977aa26432b8ac1b0aecd846febb                           86.60%    passed     72.48%
+ 340  9ee404b1083691cd6dc2925d518d8831                           86.60%    passed     42.10%
+ 341  89ff11561c06a94b4f4620e7bb22fbd0                           86.60%    passed     93.51%
+ 342  769e439ec97ecb2d07cadc1675d078f6                           86.60%    passed     41.21%
+ 343  47b874d45a7464a88374c061ad631100                           86.60%    passed     54.12%
+ 344  27494f9e26e5eb4f1d78bd2c819b2b32                           86.60%    passed     50.59%
+WARNING: 295 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                      75.18%  6 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.050 seconds
+NOTE: ModelFinder requires 38 MB RAM!
+ModelFinder will test 88 DNA models (sample size: 1865) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  1  JC            20520.803    685 42411.607    43208.740    46200.353
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  2  JC+I          19024.588    686 39421.175    40221.314    43215.452
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  3  JC+G4         18283.515    686 37939.030    38739.170    41733.308
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  4  JC+I+G4       18173.292    687 37720.584    38523.738    41520.392
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  5  F81+F         20499.668    688 42375.337    43181.514    46180.676
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  6  F81+F+I       19008.645    689 39395.291    40204.500    43206.161
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  7  F81+F+G4      18268.857    689 37915.714    38724.923    41726.584
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  8  F81+F+I+G4    18161.613    690 37703.226    38515.474    41519.627
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  9  K2P           20247.615    686 41867.230    42667.369    45661.507
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 10  K2P+I         18742.066    687 38858.131    39661.285    42657.940
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 11  K2P+G4        17986.740    687 37347.480    38150.633    41147.288
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 12  K2P+I+G4      17873.492    688 37122.984    37929.160    40928.323
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 13  HKY+F         20224.107    689 41826.214    42635.423    45637.084
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 14  HKY+F+I       18723.491    690 38826.982    39639.231    42643.383
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 15  HKY+F+G4      17965.122    690 37310.245    38122.493    41126.646
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 16  HKY+F+I+G4    17856.652    691 37095.304    37910.601    40917.236
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 17  TNe           20167.316    687 41708.633    42511.786    45508.441
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 18  TNe+I         18673.101    688 38722.201    39528.378    42527.541
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 19  TNe+G4        17920.843    688 37217.686    38023.863    41023.026
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 20  TNe+I+G4      17815.308    689 37008.615    37817.824    40819.485
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 21  TN+F          20118.487    690 41616.975    42429.224    45433.376
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 22  TN+F+I        18633.314    691 38648.627    39463.925    42470.560
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 23  TN+F+G4       17881.924    691 37145.848    37961.146    40967.781
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 24  TN+F+I+G4     17780.891    692 36945.782    37764.137    40773.245
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 25  K3P           20243.960    687 41861.920    42665.073    45661.728
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 26  K3P+I         18738.032    688 38852.064    39658.241    42657.403
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 27  K3P+G4        17983.127    688 37342.254    38148.431    41147.593
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 28  K3P+I+G4      17869.555    689 37117.110    37926.319    40927.980
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 29  K3Pu+F        20221.303    690 41822.605    42634.854    45639.006
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 30  K3Pu+F+I      18720.076    691 38822.152    39637.449    42644.084
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 31  K3Pu+F+G4     17962.464    691 37306.929    38122.226    41128.861
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 32  K3Pu+F+I+G4   17853.409    692 37090.819    37909.174    40918.282
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 33  TPM2+F        20211.135    690 41802.270    42614.518    45618.671
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 34  TPM2+F+I      18710.147    691 38802.294    39617.592    42624.226
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 35  TPM2+F+G4     17961.715    691 37305.430    38120.727    41127.362
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 36  TPM2+F+I+G4   17850.802    692 37085.604    37903.959    40913.067
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 37  TPM2u+F       20211.135    690 41802.269    42614.518    45618.670
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 38  TPM2u+F+I     18710.148    691 38802.295    39617.593    42624.227
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 39  TPM2u+F+G4    17961.715    691 37305.430    38120.727    41127.362
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 40  TPM2u+F+I+G4  17850.800    692 37085.600    37903.955    40913.063
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 41  TPM3+F        20224.101    690 41828.201    42640.450    45644.603
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 42  TPM3+F+I      18722.555    691 38827.110    39642.408    42649.043
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 43  TPM3+F+G4     17960.118    691 37302.236    38117.533    41124.168
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 44  TPM3+F+I+G4   17849.352    692 37082.704    37901.059    40910.168
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 45  TPM3u+F       20224.100    690 41828.199    42640.448    45644.601
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 46  TPM3u+F+I     18722.555    691 38827.111    39642.408    42649.043
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 47  TPM3u+F+G4    17960.118    691 37302.235    38117.533    41124.168
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 48  TPM3u+F+I+G4  17849.355    692 37082.709    37901.064    40910.172
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 49  TIMe          20163.665    688 41703.329    42509.506    45508.668
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 50  TIMe+I        18669.100    689 38716.200    39525.408    42527.070
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 51  TIMe+G4       17917.242    689 37212.485    38021.693    41023.355
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 52  TIMe+I+G4     17811.541    690 37003.081    37815.330    40819.482
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 53  TIM+F         20115.678    691 41613.357    42428.654    45435.289
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 54  TIM+F+I       18629.895    692 38643.790    39462.145    42471.253
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 55  TIM+F+G4      17879.267    692 37142.534    37960.889    40969.997
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 56  TIM+F+I+G4    17777.914    693 36941.828    37763.249    40774.822
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 57  TIM2e         20146.938    688 41669.877    42476.054    45475.216
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 58  TIM2e+I       18651.622    689 38681.244    39490.453    42492.115
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 59  TIM2e+G4      17909.829    689 37197.657    38006.866    41008.527
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 60  TIM2e+I+G4    17801.877    690 36983.753    37796.002    40800.155
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 61  TIM2+F        20105.904    691 41593.809    42409.106    45415.741
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 62  TIM2+F+I      18620.426    692 38624.853    39443.207    42452.316
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 63  TIM2+F+G4     17877.773    692 37139.546    37957.901    40967.009
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 64  TIM2+F+I+G4   17775.641    693 36937.283    37758.704    40770.277
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 65  TIM3e         20165.090    688 41706.180    42512.357    45511.519
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 66  TIM3e+I       18666.929    689 38711.857    39521.066    42522.728
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 67  TIM3e+G4      17905.663    689 37189.326    37998.535    41000.196
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 68  TIM3e+I+G4    17796.514    690 36973.027    37785.276    40789.429
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 69  TIM3+F        20118.484    691 41618.968    42434.266    45440.901
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 70  TIM3+F+I      18632.303    692 38648.605    39466.960    42476.069
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 71  TIM3+F+G4     17877.927    692 37139.854    37958.209    40967.317
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 72  TIM3+F+I+G4   17775.224    693 36936.448    37757.869    40769.442
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 73  TVMe          20222.681    689 41823.361    42632.570    45634.231
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 74  TVMe+I        18712.177    690 38804.354    39616.603    42620.755
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 75  TVMe+G4       17957.820    690 37295.641    38107.890    41112.042
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 76  TVMe+I+G4     17838.485    691 37058.970    37874.268    40880.903
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 77  TVM+F         20209.441    692 41802.883    42621.238    45630.346
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 78  TVM+F+I       18707.311    693 38800.622    39622.043    42633.616
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 79  TVM+F+G4      17955.399    693 37296.797    38118.218    41129.792
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 80  TVM+F+I+G4    17841.995    694 37071.990    37896.486    40910.515
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 81  SYM           20142.798    690 41665.596    42477.844    45481.997
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 82  SYM+I         18643.504    691 38669.008    39484.305    42490.940
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 83  SYM+G4        17893.436    691 37168.871    37984.169    40990.803
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 84  SYM+I+G4      17781.448    692 36946.896    37765.251    40774.359
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 85  GTR+F         20104.211    693 41594.423    42415.844    45427.417
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 86  GTR+F+I       18617.499    694 38622.997    39447.493    42461.523
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 87  GTR+F+G4      17872.471    694 37132.943    37957.438    40971.468
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 88  GTR+F+I+G4    17768.385    695 36926.769    37754.348    40770.826
+Akaike Information Criterion:           GTR+F+I+G4
+Corrected Akaike Information Criterion: GTR+F+I+G4
+Bayesian Information Criterion:         TIM3+F+I+G4
+Best-fit model: TIM3+F+I+G4 chosen according to BIC
+
+All model information printed to ASV280_ref63_merged.fasta.msa.model.select.model.gz
+CPU time for ModelFinder: 385.560 seconds (0h:6m:25s)
+Wall-clock time for ModelFinder: 32.705 seconds (0h:0m:32s)
+
+NOTE: 38 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.010)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.255 / LogL: -17877.924
+Init pinv, alpha: 0.072, 1.000 / Estimate: 0.450, 0.515 / LogL: -17775.109
+Init pinv, alpha: 0.143, 1.000 / Estimate: 0.450, 0.514 / LogL: -17775.114
+Init pinv, alpha: 0.215, 1.000 / Estimate: 0.449, 0.514 / LogL: -17775.123
+Init pinv, alpha: 0.286, 1.000 / Estimate: 0.450, 0.515 / LogL: -17775.126
+Init pinv, alpha: 0.358, 1.000 / Estimate: 0.450, 0.515 / LogL: -17775.133
+Init pinv, alpha: 0.430, 1.000 / Estimate: 0.449, 0.514 / LogL: -17775.149
+Init pinv, alpha: 0.501, 1.000 / Estimate: 0.457, 0.527 / LogL: -17775.159
+Init pinv, alpha: 0.573, 1.000 / Estimate: 0.457, 0.526 / LogL: -17775.172
+Init pinv, alpha: 0.645, 1.000 / Estimate: 0.457, 0.526 / LogL: -17775.199
+Optimal pinv,alpha: 0.450, 0.515 / LogL: -17775.109
+
+Parameters optimization took 24.014 sec
+BEST SCORE FOUND : -17775.109
+Total tree length: 5.857
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 285.304 sec (0h:4m:45s)
+Total wall-clock time used: 24.028 sec (0h:0m:24s)
+
+Analysis results written to: 
+  IQ-TREE report:                ASV280_ref63_merged.fasta.msa.model.select.iqtree
+  Tree used for ModelFinder:     ASV280_ref63_merged.fasta.msa.model.select.treefile
+  Screen log file:               ASV280_ref63_merged.fasta.msa.model.select.log
+
+Date and Time: Wed Dec  1 18:11:54 2021
