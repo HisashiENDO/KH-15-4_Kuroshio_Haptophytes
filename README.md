@@ -20,5 +20,5 @@ The complete run files in each sample were deposited in the DDBJ Sequence Read A
 - MAFFT (v.7.481 or higher)
 - IQ-TREE (v.1.6.12 or higher)
 
-# Prerequisites
+# Contact
 - Hisashi Endo - endo[@]scl.kyoto-u.ac.jp
