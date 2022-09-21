@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This is the main scropt to sequence trimming and quality filtering for QIIME2 pipeline
+# This is the main script of sequence trimming and quality filtering for QIIME2 pipeline
 # All the fastq files used were merged as "merge.fastq"
 
 # set directory
