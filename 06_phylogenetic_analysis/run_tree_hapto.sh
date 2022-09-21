@@ -3,7 +3,7 @@ source /etc/profile.d/modules.sh
 
 << COMMENTOUT
 """
-# Make MpV tree using curated sequences
+# Make LM tree using curated sequences of haptophyte 18S rRNA gene
 """
 COMMENTOUT
 
