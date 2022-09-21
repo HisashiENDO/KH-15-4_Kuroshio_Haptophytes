@@ -13,7 +13,7 @@ The complete run files in each sample were deposited in the DDBJ Sequence Read A
 # Prerequisites
 - Seqkit (v.0.14.0 or higher)
 - Cutadapt (v.2.5 or higher)
-- FAST-Toolkit (v.0.0.14 or higher)
+- FASTX-Toolkit (v.0.0.14 or higher)
 - QIIME2 (v.2020.2 or higher)
 - Python (v.3.7.5 or higher)
 - R (v.4.1 or higher)
