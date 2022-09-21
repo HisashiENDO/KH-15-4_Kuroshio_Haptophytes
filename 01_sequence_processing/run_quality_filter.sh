@@ -40,4 +40,4 @@ sh separate_seqs.sh merge.fastq.remrf.trim250.filt.fastq
 
 module purge
 
-echo "Quality filter finished"
+echo "Quality filtering has finished"
