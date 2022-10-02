@@ -522,7 +522,6 @@ ASV_summary <- data.frame(ASV_summary, Genus_select=Genus_select)
 
 # Make column defining ecological strategy based on Levins niche width
 # The definition is original, although Logares et al(2013) used much less values for generalist
-# 上位1/3などで定義する?
 strategy <- data.frame(Strategy = rep(NA, 437)) # Make empty df
 for (i in 1:437){
   if (ASV_summary[i,2] > 0.6){
@@ -536,12 +535,10 @@ for (i in 1:437){
 # Add as a new column
 ASV_summary <- data.frame(ASV_summary, Strategy=strategy)
 
-
 # Save data
 write_tsv(ASV_summary, "ASV_summary.table", col_names = TRUE)
 # Read table (Can be restart from here)
 ASV_summary <- read_tsv("ASV_summary.table")
-
 
 # Max contrbution vs Levins nitch width for paper
 cor.test(ASV_summary$Maxcont, ASV_summary$Levins, method = "spearman")
@@ -672,4 +669,3 @@ ggsave(path="Figs_m5", filename = "Fig.PCoA1_ECSmodule_bw.pdf", plot= pm2, width
 ##################################################################
 #
 #
-
